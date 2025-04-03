@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Conteudo from './compontentes/Conteudo';
-import Barra_lateral from './compontentes/barra_lateral';
+
 import { useState } from 'react';
 
 function App() {

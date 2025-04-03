@@ -6,7 +6,7 @@ export default function Conteudo(props) {
     const [todos, setTodos] = useState(false);
     const [itensSelecionados, setItensSelecionados] = useState([]);
 
-    // Função elevada
+    
     function salvarSelecionados(itens) {
         setItensSelecionados(itens);
         console.log("teste")
@@ -20,12 +20,12 @@ export default function Conteudo(props) {
                 todos={todos}
                 setTodos={setTodos}
                 itensSelecionados={itensSelecionados}
-                salvarSelecionados={salvarSelecionados} // Passa a função
+                salvarSelecionados={salvarSelecionados} 
             />
             <Tabela
                 load={props.load}
                 setLoading={props.setLoading}
-                salvarSelecionados={salvarSelecionados} // Passa a função
+                salvarSelecionados={salvarSelecionados} 
                 setItensSelecionados={setItensSelecionados}
                 itensSelecionados={itensSelecionados}
             />
