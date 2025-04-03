@@ -1,0 +1,44 @@
+/* CSS DA TABELA AONDE É APRESENTADO OS RESULTADOS DA API*/
+.tabela{
+    display: flex;
+    /* border: 1px solid #e2e8f0; */
+    width: 100%;
+    flex-direction: column;
+
+    margin-top: 10px;
+    height: 150vh;
+    background-color: white;
+}
+
+.tabela-header{
+    padding: 12px 12px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100px;
+}
+.titulo-div{
+    display: flex;
+    justify-content: left;
+}
+.conteudo-header{
+    padding: 12px;
+    display: flex; 
+    height: fit-content;
+    flex-direction: column;
+}
+.titulo{
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: 600;
+}
+.btn-info{
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}

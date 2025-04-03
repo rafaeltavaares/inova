@@ -1,0 +1,165 @@
+/* CSS DO CONTEUDO PRINCIPAL - LUGAR AONDE APRESENTO OS RESULTADOS DA API DO TRJ */
+.conteudo{
+    width: 100%;
+    padding: 16px ;
+    height: auto; /* Alterado de 130vh para auto */
+    display: flex;
+    flex-direction: column;
+    color: #64748b;
+}
+
+/* Barra de pesquisa */
+.pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    justify-content: space-between; /* Alterado de right para space-between */
+    width: 100%;
+}
+
+/* Barra de pesquisa */
+.barra_pesquisa{
+    border-radius: 5px;
+    width: 100%; /* Alterado de 336px para 100% para ser mais flexível */
+    max-width: 336px; /* Limita o tamanho máximo */
+    border: none;
+}
+
+/* Barra com ícone */
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px;
+    border: 0.5px solid #e2e8f0;
+    background-color: white;
+}
+
+.barra img{
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+/* CSS DA BARRA DE FILTROS */
+.filtros{
+    display: flex;
+    background-color: #f9fbfd;
+    margin-top: 10px;
+    flex-direction: row;
+    padding: 10px 0px 0px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adiciona flex-wrap para que os botões se ajustem em telas pequenas */
+}
+
+.filtros button{
+    background-color: transparent;
+    color: #64748b;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 12px 6px;
+    font-size: 14px;
+    border: none;
+    margin: 5px;
+    flex: 1 1 auto; /* Torna os botões responsivos */
+}
+
+.filtros button:hover{
+    cursor: pointer;
+}
+
+.filtros button:focus{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 40px -13px rgba(0,0,0,1);
+}
+
+/* Botões específicos */
+.especifico button{
+    background-color: #0f172a;
+    color: #f0f6fc;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 12px 6px;
+    font-size: 14px;
+    border: none;
+    flex: 1 1 auto;
+}
+
+.especifico button:hover{
+    background-color: #0f172ae6;
+}
+
+.especifico button:focus{
+    background-color: #0f172a;
+    color: #f0f6fc;
+    box-shadow: 0px 0px 40px -13px rgba(0,0,0,1);
+}
+
+/* Estilo para a área de dados */
+.dados{
+    width: 100%;
+    max-width: 50vw; /* Limita a largura máxima */
+    position: relative;
+    overflow: hidden;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
+    top: 80px;
+    background-color: #ffffff;
+    margin: 0 auto; /* Centraliza a div */
+}
+
+.dados-selecionados{
+    display: flex;
+    text-align: justify;
+    font-size: small;
+    height: auto; /* Alterado de 250px para auto */
+    border-bottom: 0.5px solid #64748b;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem */
+}
+
+.dados-selecionados-dir,
+.dados-selecionados-esq{
+    width: 100%; /* Em telas pequenas, a largura será 100% */
+    display: flex;
+    justify-content: center;
+}
+
+.dados-selecionados-esq{
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .dados-selecionados-dir, .dados-selecionados-esq{
+        width: 50%; /* Em telas médias ou maiores, a largura volta para 50% */
+        flex-direction: row;
+    }
+    
+    .pesquisa{
+        justify-content: space-between; /* Ajuste do alinhamento para telas maiores */
+    }
+
+    .filtros{
+        flex-direction: row; /* Mantém os filtros na mesma linha em telas maiores */
+    }
+
+    .filtros button{
+        margin: 5px;
+        flex: 1 1 150px; /* Define um tamanho mínimo para os botões */
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo{
+        padding: 8px;
+    }
+
+    .dados{
+        width: 100%;
+        top: 60px;
+    }
+}

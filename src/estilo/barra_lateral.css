@@ -1,0 +1,10 @@
+.lateral{
+    background-color: white;
+    border: 0.5px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 500ms;
+    width: 5%;
+    height: 100vh;
+}
