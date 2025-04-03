@@ -1,4 +1,4 @@
-# 🚀 Como Executar o Projeto React do desafio técnico da inova
+# 🚀 Como Executar o Projeto React do desafio Estagiária(o) de Desenvolvimento de Soluções Digitais no Inova_MPRJ
 
 Este guia explica o passo a passo para instalar e executar este projeto React, desde a instalação do Node.js até a build final.
 
